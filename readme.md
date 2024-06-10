@@ -5,10 +5,10 @@
 <img src="src/design/page2.gif">
 <img src="src/design/footer.png">
 
-## linguagens usadas 🪛
+## TECNOLOGIAS USADAS 🪛
 - HTML
 - CSS
 - JAVASCRIPT
 
-## conhecimento adquirido 🧠
+## CONHECIMENTO ADQUIRIDO 🧠
 fiz o uso do projeto que ja postei no meu github de Rolagem-image usando o Javascript e o uso do hover juntamente com Pseudo-elemento ::after e ::before.
