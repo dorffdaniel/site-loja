@@ -34,11 +34,24 @@ header{
     font-size: 20px;
 }
 
-.barra-navegacao nav ul {
+.hamburguer{
+    display: none;
+}
+
+.hamburguer .line{
+    margin: 0.3em;
+    width: 2em;
+    height: 0.3em;
+    background: #fff;
+    transition: all ease 0.5s;
+}
+
+.nav-list{
     display: flex;
 }
 
-.barra-navegacao nav ul li a{
+.nav-list li a{
+    display: flex;
     color: aliceblue;
     margin: 20px;
     font-size: 28px;
@@ -96,19 +109,25 @@ header{
     height: 1000px;
 }
 
-.content-new img{
-    padding: 20px;
-    width: 1000px;
-    height: 1000px;
-    object-fit: cover;
+.content-new .feminino{
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
 }
 
-.about-new{
+.content-new .maculino{
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-    font-size: 60px;
+    justify-content: end;
+    align-items: center;
+}
+
+.content-new img{
+    padding: 20px;
+    width: 40em;
+    height: 50em;
+    object-fit: cover;
 }
 
 .promocao{

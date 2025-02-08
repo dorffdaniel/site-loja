@@ -18,3 +18,10 @@ backBtn.addEventListener("click", ()=>{
     scrollContainer.style.scrollBehavior = "smooth";
     scrollContainer.scrollLeft -= 900;
 })
+
+let hamburguer= document.querySelector('.hamburguer');
+let navList = document.querySelector('.nav-list');
+hamburguer.addEventListener('click', ()=>{
+    hamburguer.classList.toggle('ativo');
+    navList.classList.toggle('ativado');
+})

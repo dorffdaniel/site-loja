@@ -1,0 +1,134 @@
+@media (min-width: 320px) and (max-width: 480px) { 
+    .hamburguer{
+        position: absolute;
+        display: block;
+        right: 0;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .hamburguer.ativo .line:nth-child(1){
+        position: absolute;
+        transform: rotate(45deg);
+        top: 50%;
+        transition: all ease 0.5s;
+    }
+
+    .hamburguer.ativo .line:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburguer.ativo .line:nth-child(3){
+        position: absolute;
+        top: 50%;
+        transform: rotate(-45deg);
+        transition: all ease 0.5s;
+    }
+
+    .nav-list{
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh;
+        right: 0;
+        top: 0;
+        background: #000;
+        align-items: center;
+        width: 50vw;
+        opacity: 0;
+    }
+
+    .nav-list li a{
+        font-size: 1.3em;
+    }
+
+    .ativado{
+        opacity: 1;
+    }
+    
+    .barra-navegacao{
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .barra-navegacao input{
+        height: 0.5em;
+        width: 8em;
+        padding: 0.7em;
+    }
+
+    .barra-navegacao input::placeholder{
+        font-size: 0.8em;
+    }
+
+    .secoes nav ul li a{
+        font-size: 1em;
+    }
+
+    .btn button{
+        padding: 0.3em;
+        margin: 0.3em;
+        color: aliceblue;
+        border: 2px solid #fff;
+        font-size: 1.5em;
+    }
+
+    .content-new img{
+        padding: 0.5em;
+        width: 11em;
+        height: 30em;
+        object-fit: cover;
+    }
+
+    .content-new h2{
+        font-size: 1em;
+        margin: 0 1em;
+    }
+
+    .promocao{
+        height: auto;
+        width: 100%;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .galeria{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .card img{
+        width: 100%; 
+        height: auto;
+        max-width: 300px;
+    }
+
+    #backBtn, #nextBtn{
+        display: none;
+    }
+
+    .imagem::before{
+        content: 'NEW ITEM';
+        font-size: 1em;
+    }
+
+    .info{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-titulo h3{
+        margin-bottom: 0.3em;
+        font-size: 1.4em; 
+        color: aqua;
+    }
+
+    .info-titulo p{
+        font-size: 0.9em;
+        margin-bottom: 0.7em;
+        cursor: pointer;
+    }
+
+}
