@@ -7,8 +7,7 @@
 }
 
 header{
-    background-image: url(src/imagens/back-principal.jpg
-    );
+    background-image: url(../imagens/back-principal.jpg);
     height: 900px;
     background-size: cover;
     display: flex;
@@ -210,7 +209,7 @@ header{
 .info{
     display: flex;
     height: 550px;
-    background: url(src/imagens/img-footer.jpg);
+    background: url(../imagens/img-footer.jpg);
     background-size: cover;
     align-items: center;
     justify-content: space-around;
