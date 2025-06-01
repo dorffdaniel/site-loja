@@ -7,6 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/responsivo.css">
+    <link rel="stylesheet" href="src/css/bootstrap.css">
+    <link rel="stylesheet" href="leaflet.css">
+    <script src="src/js/jquery.js"></script>
+    <script src="leaflet.js"></script>
+    <script src="src/js/bootstrap.js"></script>
 </head>
 
 <body>
@@ -25,7 +30,7 @@
                 <nav>
                     <ul class="nav-list">
                         <li><a href="#">Sign/Register</a></li>
-                        <li><a href="#"><ion-icon name="globe-outline"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="globe-outline" onclick="mostrarMapa()"></ion-icon></a></li>
                         <li><a href="#"><ion-icon name="heart-outline"></ion-icon></a></li>
                         <li><a href="#"><ion-icon name="bag-outline"></ion-icon></a></li>
                     </ul>
@@ -43,6 +48,7 @@
             </div>
         </div>
 
+
         <div class="container">
             <div class="btn">
                 <button>Women</button>
@@ -51,6 +57,26 @@
             </div>
         </div>
     </header>
+
+    <div class="modal" tabindex="-1" id="modalLocalizacao">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Localizaçao</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div id="map"></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
     <section class="content-new">
         <div class="feminino">
             <img src="src/imagens/new.jpg" alt="">

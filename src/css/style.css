@@ -56,6 +56,12 @@ header{
     font-size: 28px;
 }
 
+
+#map{
+    height: 25em;
+    width: 38em;
+}
+
 .secoes{
     width: 50px;
     width: 100%;
