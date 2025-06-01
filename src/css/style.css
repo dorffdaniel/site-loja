@@ -59,7 +59,7 @@ header{
 
 #map{
     height: 25em;
-    width: 38em;
+    width: auto;
 }
 
 .secoes{
