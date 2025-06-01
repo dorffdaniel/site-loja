@@ -12,6 +12,8 @@
     <script src="src/js/jquery.js"></script>
     <script src="leaflet.js"></script>
     <script src="src/js/bootstrap.js"></script>
+    <script src="src/js/cadastro.js"></script>
+    <script src="src/js/sweet.js"></script>
 </head>
 
 <body>
@@ -29,7 +31,7 @@
 
                 <nav>
                     <ul class="nav-list">
-                        <li><a href="#">Sign/Register</a></li>
+                        <li><a href="#" onclick="mostrarRegistro()">Sign/Register</a></li>
                         <li><a href="#"><ion-icon name="globe-outline" onclick="mostrarMapa()"></ion-icon></a></li>
                         <li><a href="#"><ion-icon name="heart-outline"></ion-icon></a></li>
                         <li><a href="#"><ion-icon name="bag-outline"></ion-icon></a></li>
@@ -59,21 +61,71 @@
     </header>
 
     <div class="modal" tabindex="-1" id="modalLocalizacao">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">we are here</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">we are here</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
 
-                        <div id="map"></div>
-
-                    </div>
+                    <div id="map"></div>
 
                 </div>
+
             </div>
         </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modalRegistro">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">registre-se e ganhe 10% de desconto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalRegsite">
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">nome: </label>
+                        <input type="nome" class="form-control" id="nomeCad">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">email: </label>
+                        <input type="email" class="form-control" id="emailCad">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">senha: </label>
+                        <input type="password" class="form-control" id="senhaCad">
+                    </div>
+
+
+                    <button type="button" class="btn btn-warning" onclick="registrarNovaConta()">Cadastrar</button>
+                    <br>
+                    <br>
+
+                    <h5>ja tem uma conta ?</h5>
+                    <h6>login</h6>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">email: </label>
+                        <input type="email" class="form-control" id="emailLogin">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">senha: </label>
+                        <input type="password" class="form-control" id="senhaLogin">
+                    </div>
+
+                    <button type="button" class="btn btn-primary">Entrar</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 
